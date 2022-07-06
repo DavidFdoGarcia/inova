@@ -1,0 +1,198 @@
+@font-face
+{
+    font-family: Rondalo;
+    src: url(../fonts2/RONDALO.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 90%;
+    height: auto;
+    max-width: 1000px;
+    margin: 5px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header rectangulo"
+                          "nav nav"
+                          "main main"
+                          "footer footer";
+}
+
+body
+{
+    font-family: Rondalo;
+}
+
+h1,h2
+{
+    text-align: center;
+    font-size: 35px;
+}
+
+header
+{
+    grid-area: header;
+}
+
+.rectangulo-azul
+{
+    grid-area: rectangulo;
+    background: rgb(7, 9, 52);
+    width: 100%;
+    height: 55%;
+    margin-top: 30px;
+}
+
+
+nav
+{
+    grid-area: nav;
+    background: rgb(7, 9, 52);
+}
+
+    nav a
+    {
+        color: #fff;
+        padding: 26px 20px;
+        display: inline-block;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    nav a:hover
+    {
+        border-bottom: 4px solid #ff9f1c;
+    }
+
+main
+{
+    grid-area: main;
+}
+
+section
+{
+    margin: 0 10%;
+}
+
+.card
+{
+    /* border: 1px solid #999; */
+    box-sizing: border-box;
+    color: #444;
+    display: inline-block;
+    margin: 15px 5px;
+    padding: 1em;
+    width: 31.53;
+}
+
+.card p
+{
+    text-align: center;
+    font-family: Rondalo;
+}
+
+.card h3
+{
+    text-align: center;
+    font-family: Rondalo;
+}
+
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.card img
+{
+    width: 200px;
+}
+
+
+footer
+{
+    grid-area: footer;
+    background: rgb(174, 175, 168);
+    font-size: 18px;
+    padding: 26px 20px;
+    text-align: center;
+}
+
+/* ----------------------Responsive ------------------*/
+/* Extra large device(large desktops, 1200px and up) */
+@media (max-width: 1200px)
+{
+    
+}
+
+/* large device(desktops, 992px and up) */
+@media (max-width: 1048px)
+{
+
+}
+
+/* Medium device(tablets, 768px and up) */
+@media (max-width: 900px)
+{
+
+}
+
+/* small device(landscape, phones, 576px and up) */
+@media (max-width: 800px)
+{
+
+}
+
+/* small device(landscape, phones, 576px and up) */
+@media (max-width: 674px)
+{
+    nav a
+    {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 626px)
+{
+    nav a
+    {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 529px)
+{
+    nav a
+    {
+        font-size: 10px;
+    }
+
+    .rectangulo-azul
+    {
+        display: none;
+    }
+
+        h1,h2
+    {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    footer 
+    {
+        font-size: 12px;
+    }
+}
+
